@@ -1,0 +1,27 @@
+{
+  "name": "gdbots/query-parser",
+  "homepage": "https://github.com/gdbots/query-parser-php",
+  "description": "Php library that converts search queries into terms, phrases, hashtags, mentions, etc.",
+  "type": "library",
+  "license": "Apache-2.0",
+  "require": {
+    "php": ">=7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.2",
+    "ruflin/elastica": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gdbots\\QueryParser\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gdbots\\Tests\\QueryParser\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
